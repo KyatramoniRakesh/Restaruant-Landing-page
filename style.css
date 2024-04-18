@@ -7,19 +7,33 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   font-size: 12pt;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EBA00D;
+}
+
+body {
+  margin: 1rem 4rem;
+  /* display: flex; */
+  background-color:white;
+  justify-content: center; 
+  /* padding: 0 40px; */
 }
 
 nav{
   height: 60px;
-  background-color: var(--color-1);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
 
+}
+.logo{
+  height: 3rem;
+  padding-left: 2rem;
+  width:  fit-content;
+  /* border-radius: 50%; */
+}
 .links-container{
   height: 100%;
   width: 100%;
@@ -34,18 +48,21 @@ nav a{
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--text-color);
+  color: black;
+  
 }
 
 nav a:hover{
   color:orange;
+  /* background-color: brown; */
+ 
 }
 
 nav .home-link{
   margin-right: auto;
 }
 nav svg{
-  fill: white;
+  fill: black;
 }
 
 #sidebar-active{
@@ -56,7 +73,68 @@ nav svg{
   display: none;
 }
 
+/* <============  Container  =========>*/
+h1{
+  font-size: larger;
+}
+.container {
+  margin-top: 2rem;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-sm-6 {
+  flex: 1; /* Equal width for both columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.col-sm-6 img {
+  max-width: 100%; 
+}
+
+.col-sm-6 h2 {
+  margin-right: 20px; /* Add spacing between text and image */
+}
+
+/* <============  Container End =========> */
 @media(max-width:450px){
+  body{
+    margin: 1rem 1rem;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align logo and menu icon to start and end */
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 5px; /* Add some space between the logo and the edge */
+    height: 3rem;
+    width: 3rem;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  .open-sidebar-button {
+    order: 2; /* Place menu icon at the end */
+  }
+
   .links-container{
     flex-direction: column;
     align-items: flex-start;
@@ -77,6 +155,7 @@ nav svg{
     padding: 30px 20px;
     justify-content: flex-start;
   }
+
   .open-sidebar-button, .close-sidebar-button{
     display:block;
     padding:20px;
