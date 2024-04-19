@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav>
-    <input type="checkbox" id="sidebar-active" >
-    <img src="Images/logo.jpeg" alt="logo" class="logo">
+    <input type="checkbox" id="sidebar-active">
+    <img src="Images/SHAKESlogo.png" alt="logo" class="logo">
     <label for="sidebar-active" class="open-sidebar-button">
-      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+      </svg>
     </label>
     <label id="overlay" for="sidebar-active"></label>
     <div class="links-container">
       <label for="sidebar-active" class="close-sidebar-button">
-        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+          <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+        </svg>
       </label>
 
       <a href="#" class="home-link">Home</a>
-      <a href="#">About</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-      <a href="#">Other</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Search">
+        <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+      </div>
     </div>
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <h2>Enjoy the best shakes with us...</h2>
+      <div class="col-sm-6" id="left-column-text">
+        <h2>Enjoy the best <span class="orange-text">Shakes</span> with us... <img src="Images/shakes_svg.png" alt="sticker" id="h2-img"></h2>
+        <p>Step into a world of milkshake marvels at our restaurant, where each sip is a journey into blissful
+          indulgence. Our menu boasts an array of handcrafted shakes that redefine the art of sweet satisfaction. From
+          classic favorites like velvety chocolate and creamy vanilla to inventive creations bursting with flavor,
+          there's something to tantalize every taste bud. Dive into a whirlwind of decadence with our signature shakes,
+          meticulously crafted with premium ingredients and served with a touch of elegance. Whether you're craving a
+          nostalgic treat or seeking a bold flavor adventure, our shakes promise to delight and dazzle. Join us and
+          experience the ultimate milkshake extravaganza that's sure to leave you craving for more.</p>
+        <button id="order-button">Order Now<svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
+            width="32" id="arrow">
+            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+          </svg></button>
       </div>
+
       <div class="col-sm-6">
         <img src="Images/1.jpeg" alt="image">
       </div>
     </div>
   </div>
 </body>
+
 </html>

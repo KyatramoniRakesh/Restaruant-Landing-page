@@ -24,7 +24,7 @@ body {
 nav{
   height: 60px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
 }
@@ -40,6 +40,8 @@ nav{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
 }
 
 nav a{
@@ -58,7 +60,7 @@ nav a:hover{
  
 }
 
-nav .home-link{
+nav .link{
   margin-right: auto;
 }
 nav svg{
@@ -74,8 +76,32 @@ nav svg{
 }
 
 /* <============  Container  =========>*/
-h1{
-  font-size: larger;
+h7{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.col-sm-6 button{
+  margin-left: 0;
+}
+#order-button{
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 15px;
+  border-radius: 4rem;
+  background-color: #EBA00D;
+  width: 10rem;
+ justify-content: center;
+}
+
+#arrow{
+  /* align-items: center; */
+}
+
+#left-column-text{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  /* color: darkgoldenrod; */
 }
 .container {
   margin-top: 2rem;
@@ -99,13 +125,68 @@ h1{
 
 .col-sm-6 img {
   max-width: 100%; 
+  height: 31rem;  
+}
+.col-sm-6 button {
+  margin-right: auto;
+  margin-left: 20px; 
 }
 
-.col-sm-6 h2 {
-  margin-right: 20px; /* Add spacing between text and image */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #EBA00D;
+  border-radius: 25px;
+  padding: 10px;
 }
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+p {
+  
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; 
+  color: #333; 
+  
+  margin: 10px; /* Remove default margin */
+  padding: 1rem; /* Remove default padding */
+
+
+  text-align: left; /* Align text to the left */
+}
+.orange-text {
+  color: orange;
+}
+
+#h2-img {
+  height: 5rem;
+  width: 5rem; /* Adjust the width of the sticker image */
+  vertical-align: middle; /* Align the sticker image vertically */
+  margin-top: -23px;
+}
+
+
 
 /* <============  Container End =========> */
+
+@media (max-width: 768px) {
+  body {
+    /* margin: 1rem; */
+  }
+}
 @media(max-width:450px){
   body{
     margin: 1rem 1rem;
@@ -122,22 +203,18 @@ h1{
   }
 
   .logo {
-    margin-left: 5px; /* Add some space between the logo and the edge */
-    height: 3rem;
-    width: 3rem;
-    padding: 20px;
     display: flex;
     justify-content: flex-start;
+   
   }
   
-
   .open-sidebar-button {
     order: 2; /* Place menu icon at the end */
   }
 
   .links-container{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: normal;
     position: fixed;
     top: 0;
     right: -100%;
@@ -173,4 +250,34 @@ h1{
     left: 0;
     z-index: 9;
   }
+  .search-bar{
+    display: none;
+  }
+  .row {
+    flex-direction: column-reverse; /* Reverse the order of the columns */
+  }
+
+  .col-sm-6 {
+    margin-bottom: 2rem; /* Add some space between the columns */
+  }
+
+  .col-sm-6 img {
+    margin-bottom: 1rem; /* Add some space between the image and the text */
+    max-width: 100%; /* Ensure the image spans the full width */
+  }
+
+  #left-column-text h2 {
+    font-size: 2rem; /* Decrease the font size of the heading */
+  }
+
+  #left-column-text p {
+    font-size: 14px; /* Decrease the font size of the paragraph */
+  }
+  .col-sm-6 button {
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 1rem;
+    height: 1rem;
 }
+}
+
