@@ -94,9 +94,6 @@ h7{
  justify-content: center;
 }
 
-#arrow{
-  /* align-items: center; */
-}
 
 #left-column-text{
   font-family: 'Times New Roman', Times, serif;
@@ -125,12 +122,9 @@ h7{
 
 .col-sm-6 img {
   max-width: 100%; 
-  height: 31rem;  
+  height: 40rem;  
 }
-.col-sm-6 button {
-  margin-right: auto;
-  margin-left: 20px; 
-}
+
 
 .search-bar {
   display: flex;
@@ -138,6 +132,7 @@ h7{
   background-color: #EBA00D;
   border-radius: 25px;
   padding: 10px;
+  column-gap: 10px;
 }
 
 .search-input {
@@ -146,6 +141,7 @@ h7{
   background-color: transparent;
   color: white;
   padding: 5px;
+  width: 5rem;
 }
 
 .search-button {
@@ -153,6 +149,7 @@ h7{
   border: none;
   color: white;
   cursor: pointer;
+  
 }
 p {
   
@@ -176,6 +173,51 @@ p {
   width: 5rem; /* Adjust the width of the sticker image */
   vertical-align: middle; /* Align the sticker image vertically */
   margin-top: -23px;
+}
+
+#search-button{
+  color: black;
+  padding: 3px;
+  border-radius: 4rem;
+  background-color: #EBA00D;
+  width: 5rem;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+#search-button:hover{
+  background-color: orange; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+#order-button{
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 13px;
+  margin-right: auto;
+  margin-left: 20px; 
+  border-radius: 4rem;
+  background-color: #EBA00D;
+  width: 10rem;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+
+
+#order-button:hover{
+  background-color: orange; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+#arrow {
+  margin-left: 0.5rem; /* Add some space between text and arrow */
+}
+
+#order-button:hover #arrow path {
+  fill: white; /* Change arrow color on hover */
 }
 
 
@@ -220,7 +262,7 @@ p {
     right: -100%;
     z-index: 10;
     width: 300px;
-    background-color: var(--color-1);
+    background-color:whitesmoke;
     box-shadow: -5px 0 5px rgb(0, 0, 0,0.25);
     transition: 0.75s ease-in-out;
   }
@@ -258,12 +300,14 @@ p {
   }
 
   .col-sm-6 {
-    margin-bottom: 2rem; /* Add some space between the columns */
+    margin-bottom: 2rem; 
   }
 
   .col-sm-6 img {
     margin-bottom: 1rem; /* Add some space between the image and the text */
-    max-width: 100%; /* Ensure the image spans the full width */
+    /* max-width: 100%;  */
+    height: 22rem;
+    width: 20rem;
   }
 
   #left-column-text h2 {
@@ -279,5 +323,13 @@ p {
     font-size: 1rem;
     height: 1rem;
 }
+
+#h2-img {
+  height: 2rem;
+  width: 2rem; /* Adjust the width of the sticker image */
+  vertical-align: middle; /* Align the sticker image vertically */
+  margin-top: 1px;
+}
+
 }
 
