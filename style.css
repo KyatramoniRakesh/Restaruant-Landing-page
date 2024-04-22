@@ -223,7 +223,7 @@ p {
 /* =======================Cards=====================> */
 .cards-con{
   background: white;
-  height: 200vh;
+  height: 100vh;
 }
 .articles {
   display: flex;
@@ -288,6 +288,45 @@ p {
 /* ======================= End Cards =====================> */
 
 /* <============  Container End =========> */
+
+/* ======================= Offer =====================> */
+
+#offer{
+  display: flex;
+  flex-direction: column;
+  background-color: #627375;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+#left-div {
+  display: flex;
+  flex-direction: column;
+}
+#side-heading {
+  align-self: flex-start;
+  color: #EBA00D;
+}
+#left-div h2{
+  color: aliceblue;
+  align-self: flex-start;
+  font-family: 'Times New Roman', Times, serif;
+}
+#left-div p{
+  color: aliceblue;
+}
+.card-content{
+  display: grid;
+  grid-template-columns: auto 4.5rem;
+}
+/* ------------- */
+#services{
+  background-color: black;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 2 4rem;
+}
+/* ======================= End Offer =====================> */
 
 @media (max-width: 768px) {
   body {
