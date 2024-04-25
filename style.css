@@ -393,6 +393,17 @@ p {
 }
 /* ======================= End Offer =====================> */
 
+/* ======================= About US =====================> */
+#about_us_img{
+  height: 22rem;
+  margin: 5rem;
+}
+#about_us_h3{
+font-size: 3rem;
+}
+/* ======================= End  About US =====================> */
+
+
 @media (max-width: 768px) {
   body {
     /* margin: 1rem; */
