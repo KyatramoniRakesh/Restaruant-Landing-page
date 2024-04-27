@@ -403,7 +403,44 @@ font-size: 3rem;
 }
 /* ======================= End  About US =====================> */
 
+/* ======================= Testimonals =====================> */
+#Testimonals{
+  background-color: #FDF5EB;
+  margin-top: 0;
+}
+#headings {
+  color: #EBA00D;
+  font-weight: bold;
+  align-items: flex-start;
+  text-align: center;
 
+}
+#headings h3{
+ font-size: 40px;
+ color:#6c757d ;
+}
+.Testimonals_div{
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-around; */
+}
+.testimonial_card{
+  background-color: #333;
+  color: #FDF5EB;
+  height: 15rem;
+  width: 12rem;
+  border-radius: 1rem;
+  /* align-items: center; */
+  
+
+}
+#stars {
+  padding-left: 1rem;
+}
+#stars svg{
+  fill: #EBA00D;
+}
+/* ======================= End Testimonals =====================> */
 @media (max-width: 768px) {
   body {
     /* margin: 1rem; */
