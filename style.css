@@ -425,20 +425,32 @@ font-size: 3rem;
   /* justify-content: space-around; */
 }
 .testimonial_card{
-  background-color: #333;
+  background-color: #be7676;
   color: #FDF5EB;
-  height: 15rem;
-  width: 12rem;
+  height: 20rem;
+  align-items: center;
+  width: 18rem;
   border-radius: 1rem;
-  /* align-items: center; */
-  
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #stars {
-  padding-left: 1rem;
+  margin: 1rem;
+  /* padding-left: 1rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 #stars svg{
   fill: #EBA00D;
+}
+#testimonals_card_img{
+  height: 5rem;
+  width: auto;
+  
 }
 /* ======================= End Testimonals =====================> */
 @media (max-width: 768px) {
