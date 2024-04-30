@@ -253,6 +253,7 @@ p {
   height: 100vh;
 }
 
+
 .articles {
   display: flex;
   flex-wrap: wrap;
@@ -285,13 +286,14 @@ p {
 
 
 .articles article img {
-  max-width: 100%;
+  /* max-width: 100%; */
   transform-origin: center;
   transition: transform 0.4s ease-in-out;
-  height: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   object-fit: cover;
+  height: 15rem;
+  /* width: 15rem; */
 }
 
 .articles article:hover img {
@@ -304,9 +306,14 @@ p {
 }
 
 .articles figure {
-  width: 100%;
-  height: 14rem;
+  display: flex;
+  align-items: center;
+  height: 15rem; 
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 #cards-p {
@@ -679,6 +686,11 @@ p {
   .container {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1px;
   }
 
   nav {
@@ -808,6 +820,10 @@ p {
 
   .row h2 {
     text-align: center;
+
+  }
+  #service-row{
+    display: flex;
   }
 
   .articles {
@@ -840,7 +856,52 @@ p {
     justify-content: center;
   }
 
+  #about_us_h3{
+    font-size: 2rem;
+  }
+#side-heading{
+  font-size: 1.2rem;
+}
+#headings h3 {
+  font-size: 1.2rem;
+  height: 1rem;
+}
 
+#about_us_img{
+  height: 18rem;
+  width: 22rem;
+  padding: 0;
+  margin: 0;
+}
+.Testimonals_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.subscribe {
+  position: relative;
+  margin-bottom: 1rem;
+
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  width: 15rem;
+  margin-left:2rem;
+}
+
+.subscribe button {
+  padding: 10px;
+  color: white;
+  margin-right:2rem;
+}
+.footer-item a,p{
+  font-size: 15px;
+}
+.social-icons-sec{
+  margin-bottom: 1rem;
+}
 
 }
 
