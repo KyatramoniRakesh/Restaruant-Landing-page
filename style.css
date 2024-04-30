@@ -185,9 +185,7 @@ p {
 #h2-img {
   height: 5rem;
   width: 5rem;
-  /* Adjust the width of the sticker image */
   vertical-align: middle;
-  /* Align the sticker image vertically */
   margin-top: -23px;
 }
 
@@ -200,14 +198,18 @@ p {
   cursor: pointer;
   justify-content: center;
   transition: background-color 0.3s, color 0.3s;
-  /* Smooth transition for background color and text color */
+  border-radius: 800px;
+  border: none;
 }
 
 #search-button:hover {
   background-color: orange;
-  /* Change background color on hover */
+  padding: 5px;
+  background-color: #27AE60;
   color: white;
-  /* Change text color on hover */
+  border: none;
+  cursor: pointer;
+ 
 }
 
 
