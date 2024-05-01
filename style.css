@@ -429,8 +429,8 @@ p {
 }
 
 #pos-img {
-  height: 10rem;
-  width: 8rem;
+  height: 30rem;
+  width: 30rem;
   border-radius: 1rem;
 }
 
@@ -697,7 +697,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* Align logo and menu icon to start and end */
     align-items: center;
   }
 
@@ -716,7 +715,7 @@ p {
     flex-direction: column;
     align-items: normal;
     position: fixed;
-    top: 0;
+    top: 1rem;
     right: -100%;
     z-index: 10;
     width: 300px;
@@ -741,6 +740,7 @@ p {
 
   #sidebar-active:checked~.links-container {
     right: 0;
+    top: 0;
   }
 
   #sidebar-active:checked~#overlay {
@@ -758,7 +758,6 @@ p {
 
   .row {
     flex-direction: column-reverse;
-    /* Reverse the order of the columns */
   }
 
   .col-sm-6 {
